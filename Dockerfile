@@ -9,7 +9,7 @@ COPY ./start.sh /start.sh
 
 RUN apk --update --no-cache add \
         git python tzdata unrar &&\
-    git clone --depth 1 https://github.com/SickRage/SickRage.git /sickrage && \
+    git clone --depth 1 https://github.com/cytec/SickRage.git /sickrage && \
     chmod u+x /start.sh && \
     rm -rf /tmp && \
     rm -rf /var/cache/apk/*
