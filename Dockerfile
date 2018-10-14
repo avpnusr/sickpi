@@ -3,7 +3,8 @@ MAINTAINER avpnusr
 
 ENV LANG='en_US.UTF-8' \
     LANGUAGE='en_US.UTF-8' \
-    TERM='xterm'
+    TERM='xterm' \
+    TZ='Europe/Berlin'
 
 COPY ./start.sh /start.sh
 
