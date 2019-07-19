@@ -1,20 +1,13 @@
-**SickRage in container for devices with an ARM CPU**
+![SickRage Logo](https://nzbusenet.com/wp-content/uploads/2016/05/sickrage-handleiding-250x111.png)
+
+**SickRage in container for devices with an x86_64 CPU**
 ====
-Image was created on a TinkerBoard (S) and is automatically updated, when a new version of SickRage arrives on GitHub. The image is based on alpine Linux.
+Image  is automatically updated, when a new version of SickRage arrives on GitHub. 
+The image is based on alpine Linux.
 
 Versions in latest image
 ---
 The image is based on the latest **[SickRage](https://sickrage.github.io/ "SickRage Homepage")** version from **[cytec](https://github.com/cytec/SickRage "cytec SickRage")** which is a version, optimized specially for german users. On request, I will provide a version from the standard SickRage git.
-
-Tested and compatible with following devices
-----
-- Raspberry Pi
-- Raspberry Pi2
-- Raspberry Pi3
-- Raspberry Pi Zero
-- Rock64
-- TinkerBoard
-- TinkerBoard S
 
 Start your container
 -----
@@ -30,4 +23,4 @@ docker run -d \
   -e UID=<Users UID> \
   -e GID=<Users GID> \
   -p 8081:8081 \
-  --restart=always sickpi
+  --restart=unless-stopped avpnusr/sickpi
